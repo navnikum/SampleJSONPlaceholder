@@ -5,13 +5,31 @@
         "path": "/service/update2/crx",
         "method": "GET",
         "destination": "clients2.google.com",
-        "scheme": "https",
-        }
+        "scheme": "https"
       },
       "response": {
         "status": 200,
+        "headers": {
+          "Alt-Svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+          ],
+          "Cache-Control": ["no-cache, no-store, max-age=0, must-revalidate"],
+          "Content-Encoding": ["gzip"],
+          "Content-Security-Policy": [
+            "script-src 'report-sample' 'nonce-7Sujru4vU7hHy5ukGBGe7A' 'unsafe-inline' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri https://csp.withgoogle.com/csp/clientupdate-aus/1"
+          ],
+          "Content-Type": ["text/xml; charset=UTF-8"],
           "Date": ["Tue, 05 Jul 2022 13:21:19 GMT"],
           "Expires": ["Mon, 01 Jan 1990 00:00:00 GMT"],
+          "Hoverfly": ["Was-Here"],
+          "Pragma": ["no-cache"],
+          "Server": ["GSE"],
+          "Transfer-Encoding": ["chunked"],
+          "X-Content-Type-Options": ["nosniff"],
+          "X-Daynum": ["5664"],
+          "X-Daystart": ["22879"],
+          "X-Frame-Options": ["SAMEORIGIN"],
+          "X-Xss-Protection": ["1; mode=block"]
         }
       },
       "mode": "capture",
@@ -23,11 +41,38 @@
         "path": "/",
         "method": "GET",
         "destination": "www.dsdgarchitects.com",
-        "scheme": "https",
+        "scheme": "https"
       },
       "response": {
         "status": 200,
-        "Date": ["Tue, 05 Jul 2022 13:21:29 GMT"],
+        "headers": {
+          "Alt-Svc": ["h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"],
+          "Cf-Cache-Status": ["DYNAMIC"],
+          "Cf-Ray": ["7260676c7acd7d0f-LAX"],
+          "Connection": ["keep-alive"],
+          "Content-Encoding": ["br"],
+          "Content-Type": ["text/html; charset=UTF-8"],
+          "Date": ["Tue, 05 Jul 2022 13:21:29 GMT"],
+          "Expect-Ct": [
+            "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+          ],
+          "Host-Header": ["8441280b0c35cbc1147f8ba998a563a7"],
+          "Hoverfly": ["Was-Here"],
+          "Link": [
+            "\u003chttps://www.dsdgarchitects.com/wp-json/\u003e; rel=\"https://api.w.org/\", \u003chttps://www.dsdgarchitects.com/\u003e; rel=shortlink"
+          ],
+          "Nel": [
+            "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+          ],
+          "Report-To": [
+            "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=a2Cf%2FasVsN82uVMDNlF5ZOFsLL%2BF%2FSb%2ByTAAxgmPH96S7E9UhFouMIHpT2pK99JQPCKYdNGquIUGRIpgDeHNtEv1ay%2Bx8SHcQOJe9jHv92ijjh2osH3kYav2OK5%2F2tFu31gczFZxb%2Bdi\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+          ],
+          "Server": ["cloudflare"],
+          "Transfer-Encoding": ["chunked"],
+          "Vary": ["Accept-Encoding"],
+          "X-Httpd": ["1"],
+          "X-Proxy-Cache": ["HIT"],
+          "X-Xss-Protection": ["0"]
         }
       },
       "mode": "capture",
